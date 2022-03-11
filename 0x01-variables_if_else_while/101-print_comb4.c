@@ -17,7 +17,7 @@ int main(void)
 		d = 0;
 		while (d < 10)
 		{
-			c = 10;
+			c = 0;
 			while (c < 10)
 			{
 				if (c != d && d != e && e < d && d < c)
@@ -28,7 +28,7 @@ int main(void)
 					if (c + d + e != 9 + 8 + 7)
 					{
 						putchar(',');
-						putchar(',');
+						putchar(' ');
 					}
 				}
 				c++;
