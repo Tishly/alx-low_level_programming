@@ -8,5 +8,5 @@
 int main(void)
 {
 	printf("with proper grammer, but the outcome is art,\n");
-	Return (0);
+	return (0);
 }
