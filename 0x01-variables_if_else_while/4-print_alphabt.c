@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  * Description: Lowercase without q and e
  * Return: 0
  */
@@ -17,6 +17,5 @@ int main(void)
 		}
 		c++;
 	}
-
 	putchar('\n');
 	return (0);
