@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - Entry point
+ * main - Entry block
  * Description: print single digit numbers
  * Return: 0
  */
@@ -16,6 +16,6 @@ int main(void)
 		c++;
 	}
 
-	putchar('\n')
-		return (0);
+	putchar('\n'
+	return (0);
 }
