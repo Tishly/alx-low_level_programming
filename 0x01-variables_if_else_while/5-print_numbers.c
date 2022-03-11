@@ -6,6 +6,7 @@
  * Description: print single digit numbers
  * Return: 0
  */
+
 int main(void)
 {
 	char c = '0';
