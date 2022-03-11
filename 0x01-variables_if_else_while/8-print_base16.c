@@ -6,6 +6,7 @@
  * starting from 0, followed by a new line.
  * Return: 0
  */
+
 int main(void)
 {
 	char c;
@@ -19,7 +20,7 @@ while (d <= '9')
 
 for (c = 'a'; c <= 'f'; c++)
 {
-	putchar(c)
+	putchar(c);
 }
 
 putchar('\n');
