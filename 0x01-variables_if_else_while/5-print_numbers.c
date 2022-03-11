@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry block
  * Description: print single digit numbers
@@ -6,9 +8,12 @@
  */
 int main(void)
 {
-	for (int i = 0; i <= 9; i++)
+	char c = '0';
+
+	while (c <= '9')
 	{
-		printf("%d",  i);
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
