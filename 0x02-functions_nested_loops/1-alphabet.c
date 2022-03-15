@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * main - main block
- * Description: Print alphabets in void
+ * print_alphabet - Prints alphabets
+ *
  * Return: Always 0 (Success)
  */
 
-void print alphabet(void)
+void print_alphabet(void)
 {
 	char c;
 
