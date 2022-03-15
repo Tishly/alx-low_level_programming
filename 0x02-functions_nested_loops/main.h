@@ -1,7 +1,7 @@
 #define MAIN_H
 
 /* _putchar.c */
-void print_putchar(void);
+int _putchar(char c);
 
 /* 10 x alphabet */
 void print_alphabet(void);
