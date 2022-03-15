@@ -7,14 +7,12 @@
 
 int main(void)
 {
-	char c[10] = "_putchar"
+	char *s = "_putchar"
 
-		int i = 0;
-
-	while (i < 9)
+	while (*s != 0)
 	{
-		_putchar(c[i]);
-		i++;
+		_putchar(*s);
+		s++;
 	}
 	_putchar('\n');
 	return (0);
