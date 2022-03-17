@@ -18,6 +18,10 @@ void print_times_table(int n)
 				k = j * i;
 				if (j == 0)
 				{
+					_putchar(k + '0');
+				}
+				else if (k < 10 && j != 0);
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
