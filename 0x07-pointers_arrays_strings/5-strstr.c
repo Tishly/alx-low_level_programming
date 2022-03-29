@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * strstr - finds first occurrence of the
+ * _strstr - finds first occurrence of the
  * substring 'needle' in the string 'haystack'.
  *
  * @haystack: string to be checked
@@ -11,7 +11,7 @@
  * Return: pointer
  */
 
-char *strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
@@ -19,7 +19,7 @@ char *strstr(char *haystack, char *needle)
 	{
 		for (j = i; haystack[j] > '\0' && needle[j - i] > '\0'; j++)
 		{
-			if (haystack[j] != nedle[j - i])
+			if (haystack[j] != needle[j - i])
 			{
 				break;
 			}
