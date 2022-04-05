@@ -1,4 +1,4 @@
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -13,17 +13,15 @@ int _strlen(char *s)
 	int i = 0;
 
 	for (; s[i] != '\0'; i++)
-	{
-		return (i);
-	}
-	return (0);
+		;
+	return (i);
 }
 
 /**
  * *str_concat - function that concatenates two strings
  * @s1: first string
  * @s2: second string
- * Return:NULL
+ * Return: pointer
  */
 
 char *str_concat(char *s1, char *s2)
