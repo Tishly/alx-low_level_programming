@@ -45,10 +45,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (z == 0)
 	{
-		return ('\0');
+		return (0);
 	}
 
-	for (i = 0; i < (size1 + size2); i++)
+	for (i = 0; i <= (size1 + size2); i++)
 	{
 		if (i < size1)
 		{
@@ -58,8 +58,8 @@ char *str_concat(char *s1, char *s2)
 		{
 			z[i] = s2[i - size1];
 		}
-		return (z);
-		free(z);
 	}
-	return (0);
+	z[i] = '\0';
+	return (z);
+	free(z);
 }
