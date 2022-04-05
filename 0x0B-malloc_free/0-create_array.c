@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 		s[size] = c;
 		return (0);
 	}
-	else if (size == 0)
+	else
 	{
 		return ('\0');
 	}
