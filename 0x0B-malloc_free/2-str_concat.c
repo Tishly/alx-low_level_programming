@@ -10,13 +10,11 @@
 
 int _strlen(char *s)
 {
-	int i = 0;
+	int a = 0;
 
-	for (; s[i] != '\0'; i++)
-	{
-		return (i);
-	}
-	return (0);
+	for (; s[a] != '\0'; a++)
+		return (a);
+
 }
 
 /**
@@ -33,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *z;
 
-	if (s1 == 0 || s2 == 0)
+	if (s1 == NULL || s2 == NULL)
 	{
 		return ('\0');
 	}
