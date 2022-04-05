@@ -18,10 +18,11 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	for (size != 0, size > 0, size--)
+	for (size != 0; size > 0; size--)
 	{
 		s[size] = c;
 		return (s);
 	}
-	free(s)
+	free(s);
+	return (0);
 }
