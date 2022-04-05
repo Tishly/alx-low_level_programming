@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,12 +9,12 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int *s[] = malloc(size * sizeof(char c));
+	int *s[] = (int*)malloc(c * sizeof(size));
 
 	if (size == 0)
 		return (NULL);
 	else
 	{
-		printf("%d\n", *s);
+		printf("%d\n", *s[]);
 	}	return (0);
 }
