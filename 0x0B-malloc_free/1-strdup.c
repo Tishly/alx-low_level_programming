@@ -7,30 +7,37 @@
  * to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter.
  * @*str: string given as a parameter
- * @*ptr: pointer to return
+ * @*z: pointer to return
  * Return: NULL
  */
 
 char *_strdup(char *str)
 {
-	unsigned int i = 0, size = 0;
-	char *ptr = &str;
-
-	char *str = malloc(size * sizeof(char));
+	int i = 0;
+	int size = 0;
+	char *z;
+	char *str;
 
 	if (str == NULL)
 	{
 		return ('\0');
 	}
-	if (str <= i)
+	for (; str[size] != '\0' < size++)
+		;
+
+	*z = malloc(size * sizeof(*str) + 1);
+
+	if (z == NULL)
 	{
 		return ('\0');
 	}
-	while (i < str)
+	else
 	{
-		str[i];
-		i++;
+		for (; i < size; i++)
+		{
+			z[i] = str[i];
+		}
 	}
-	return (ptr);
-	free(ptr);
+	return (z);
+	free(z);
 }
