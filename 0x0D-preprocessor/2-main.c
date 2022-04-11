@@ -1,19 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#ifndef FILE_NAME
-#define FILE_NAME
-
-#endif
 /**
  * main - prints name of file
- * @argc: argument count
- * @argv: argument variables
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(void)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", _FILE_);
 	return (0);
 }
