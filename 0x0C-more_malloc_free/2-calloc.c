@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 
 /**
@@ -39,7 +40,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (m == 0)
 		return (NULL);
 
-	*_memset(m, 0, nmemb * size);
+	_memset(m, 0, nmemb * size);
 
 	return (m);
 }
