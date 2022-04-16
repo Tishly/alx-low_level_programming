@@ -1,4 +1,4 @@
-#include "funtion_pointers.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - function that iterats arrays
