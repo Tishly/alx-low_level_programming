@@ -3,21 +3,20 @@
 /**
  * list_len - function that returns the number of
  * elements in a linked list.
- * @list_t: const
  * @h: pointer
- *
  *
  * Return: number of elements
  */
 size_t list_len(const list_t *h)
 {
-	size_t counter = 0;
+	size_t nbr_element = 0;
+	const list_t counter = h;
 
-	while (h != NULL)
+	while (counter != NULL)
 	{
-		counter++;
-		h = h->next;
+		nbr_element++;
+		counter = counter->next;
 	}
 
-	return (counter);
+	return (nbr_element);
 }
