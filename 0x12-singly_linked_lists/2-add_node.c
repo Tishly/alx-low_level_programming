@@ -10,12 +10,15 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new = 0;
 	unsigned int new_len = 0;
-	list_t *i;
+
+	new = malloc(sizeof(list_t));
 
 	while (str[new_len])
+	{
 		new_len++;
+	}
 
 	if (!new)
 		return (NULL);
