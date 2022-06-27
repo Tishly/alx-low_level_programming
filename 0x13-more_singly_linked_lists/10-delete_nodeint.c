@@ -1,27 +1,46 @@
 #include "lists.h"
 /**
- * *reverse_listint - function to reverse order of nodes
- * @head:  pointer to head
- * Return: always successful
+ * delete_nodeint_at_index - deletes the node at specified index
+ * in a singly linked list
+ * @head: pointer to headnode
+ * @index: node to be deleted
+ *
+ * Return: 1 if it succeeded, -1 if it failed
  */
-listint_t *reverse_listint(listint_t **head)
+
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *forward;
-	listint_t *back = NULL;
+	listint_t *temp = *head;
+	listint_t *current = *head;
 
-	if (head  == NULL)
-		return (NULL);
 
-	forward = *head;
+	if (head == NULL || (*head) == NULL)
+		return (-1);
 
-	while (forward != NULL)
+	current = *head;
+	if (index == 0)
 	{
-		forward = forward->next;
-		forward = (*head)->next;
-		(*head)->next = back;
-		back = *head;
-		*head = forward;
+		if ((*head)->next)
+			(*head) = (*head)->next;
+		else
+			(*head) = NULL;
+		free(current);
+		return (1);
 	}
-	*head = back;
-	return (*head);
+	
+	while (index != 1)
+	{
+		if (current->next == NULL)
+			return (-1);
+
+		current = current->next;
+		--index;
+	}
+	temp = current->next;
+	if (current->next->next)
+		current->next = current->next->next;
+	else
+		current->next = NULL;
+	free(temp);
+	return (1);
 }
